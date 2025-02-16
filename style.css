@@ -1,0 +1,80 @@
+:root {
+    --mainfont: 'krub';
+    --white: #ffff;
+    --primary: #ffc107;
+    --secondory: #0097a7;
+    --gray: #757575;
+    --daerk: #212121;
+}
+
+html {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+* {
+    line-height: 1.5;
+    font-family: var(--mainfont);
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+}
+
+.hero-content h1,
+.hero-content p {
+    margin: 8px 0px;
+    color: var(--white);
+    z-index: 1;
+}
+
+.button {
+    background-color: var(--secondory);
+    text-transform: uppercase;
+    color: var(--white);
+    padding: 8px 32px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 16px 0px;
+    z-index: 1;
+}
+
+@media (max-width:770px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.hero-content {
+    height: 450px;
+    background-image: url('image/hero.jpg');
+    background-position: center top;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero-content::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
