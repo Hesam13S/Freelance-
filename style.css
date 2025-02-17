@@ -8,15 +8,18 @@
 }
 
 html {
-    padding: 0px;
-    margin: 0px;
     box-sizing: border-box;
+
 }
 
 
-* {
+*,
+*::after,
+*::before {
     line-height: 1.5;
     font-family: var(--mainfont);
+    margin: auto 0;
+    padding: auto 0;
 }
 
 
@@ -29,7 +32,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: auto;
+    height: 80px;
 }
 
 .hero-content h1,
@@ -77,4 +80,64 @@ a {
     left: 0;
     bottom: 0;
     right: 0;
+}
+
+.myservice {
+    border-radius: 16px;
+    background: whitesmoke;
+    box-shadow: 4px 4px 10px var(--gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 48px;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.title {
+    text-align: center;
+    margin: 16px;
+}
+
+.web,
+.app,
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px;
+}
+
+.web h3,
+.app h3,
+.social h3 {
+    color: var(--secondory);
+    font-size: 30px;
+    font-weight: 100;
+    margin: 16px 0px;
+}
+
+.web p,
+.app p,
+.social p {
+    text-align: center;
+    margin: 16px 0px;
+}
+
+.web div,
+.app div,
+.social div {
+    background: var(--primary);
+    border-radius: 300px;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
