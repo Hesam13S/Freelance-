@@ -40,6 +40,7 @@ a {
     margin: 8px 0px;
     color: var(--white);
     z-index: 1;
+    text-align: center;
 }
 
 .button {
@@ -58,7 +59,9 @@ a {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
+
 }
 
 .hero-content {
@@ -88,8 +91,16 @@ a {
     box-shadow: 4px 4px 10px var(--gray);
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin: 48px;
+}
+
+@media (max-width:1000px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 1;
+    }
 }
 
 .card {
@@ -153,11 +164,11 @@ a {
     color: var(--white);
     font-weight: bold;
     padding: 8px 16px;
+    display: flex;
 }
 
 .btn:hover {
     opacity: 0.9;
-    transition: ease-in 3s;
 }
 
 .main-contact {
@@ -167,8 +178,7 @@ a {
     align-items: center;
     background: var(--gray);
     padding: 8px;
-    margin-bottom: 16px;
-    width: 1000px;
+    margin: 16px;
 }
 
 .field input,
@@ -187,6 +197,7 @@ a {
     margin: 16px 16px;
     color: var(--white);
     display: flex;
+    gap: 8px;
 }
 
 .phone-name {
@@ -211,4 +222,34 @@ a {
 
 .information {
     width: 100%;
+}
+
+.phone {
+    gap: 0px;
+}
+
+.name,
+.email {
+    gap: 28px;
+}
+
+@media (max-width:1000px) {
+    .phone-name {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 0px;
+    }
+
+    .name {
+        gap: 44px;
+    }
+
+    .email {
+        gap: 46px;
+    }
+
+    .message {
+        gap: 24px;
+    }
 }
