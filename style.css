@@ -141,3 +141,74 @@ a {
     justify-content: center;
     align-items: center;
 }
+
+.contact-title {
+    color: var(--white);
+    margin: 8px 0px;
+}
+
+.btn {
+    background: var(--secondory);
+    border-radius: 8px;
+    color: var(--white);
+    font-weight: bold;
+    padding: 8px 16px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transition: ease-in 3s;
+}
+
+.main-contact {
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--gray);
+    padding: 8px;
+    margin-bottom: 16px;
+    width: 1000px;
+}
+
+.field input,
+.field textarea {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 0px solid var(--gray);
+}
+
+
+.field {
+    margin: 16px 16px;
+    color: var(--white);
+    display: flex;
+}
+
+.phone-name {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.name-phone,
+.field {
+    flex: 1;
+}
+
+.name-phone,
+.field input {
+    width: 100%;
+}
+
+.phone-name input {
+    width: 100%;
+}
+
+.information {
+    width: 100%;
+}
